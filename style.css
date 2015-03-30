@@ -1,0 +1,38 @@
+html, body {
+    background: black;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row {
+    flex: 0 1 30px;
+}
+
+.box .row.header {
+    flex: 0 1 auto;
+}
+
+.box .row.content {
+    flex: 1 1 auto;
+}
+
+.black {
+    color: black;
+}
+
+.box .row.footer {
+    flex: 0 1 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}

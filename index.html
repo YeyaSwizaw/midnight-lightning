@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Midnight Lightning</title>
+    
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Julius+Sans+One">
+    <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.13/esri/css/esri.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://js.arcgis.com/3.13/"></script>
+    <script src="papaparse.min.js"></script>
+    <script src="lightning.js"></script>
+  </head>
+
+  <body>
+    <div class="box">
+      <header class="row header">
+        <form name="url-form" id="url-form" class="pure-form pure-g">
+          <div class="pure-u-4-5">
+            <input name="url-box" id="url-box" class="black pure-input-1" type="text" placeholder="Enter a domain..." required>
+          </div>
+          <div class="pure-u-1-5">
+            <input class="pure-input-1 pure-button pure-button-primary" type="submit" value="Go!">
+          </div>
+        </form>
+       
+        <div class="pure-form pure-g">
+          <div class="pure-u-1-1">
+            <form name="expand-form" id="expand-form">
+              <input class="pure-button-primary pure-button pure-input-1" type="submit" value="&gt;">
+            </form>
+          </div>
+        </div>
+      </header>
+      <div class="row content" id="map"></div>
+      <footer class="row footer">
+        BrumHack 2.0
+      </footer>
+    </div>
+  </body>
+</html>
